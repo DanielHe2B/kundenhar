@@ -1,0 +1,58 @@
+#wrapper {
+    grid-template-areas: 
+    "hd hd hd"
+    "nav nav nav"
+    "sc sc"
+    "sc sc"
+    "sc sc"
+    "sc sc"
+    "ft ft ft ft"
+    ;
+}
+
+
+.logo{
+    border:none;
+    size: 1px;
+    height: 7vw;
+    border-radius: 9px;
+    
+}
+
+
+button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+  }
+
+.header{
+    grid-area: hd;
+    display: flex;
+    background-color: #03411d;
+    height: 25%;
+    padding: 10px;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    background-image:image(img/workicon.jpg)    
+}
+h2{
+    color: white;
+    width: 50vw;
+    color: grey;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+body{
+    background-color: #2ecc71;
+    margin:0;
+}
