@@ -1,12 +1,14 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito&display=swap');
+
 #wrapper {
+    display: grid;
     grid-template-areas: 
-    "hd hd hd"
-    "nav nav nav"
-    "sc sc"
-    "sc sc"
-    "sc sc"
-    "sc sc"
-    "ft ft ft ft"
+    "hd hd"
+    "nav nav"
+    "sc1 sc2"
+    "sc3 sc4"
+    "ft  ft"
     ;
 }
 
@@ -36,12 +38,9 @@ button {
     grid-area: hd;
     display: flex;
     background-color: #03411d;
-    height: 25%;
     padding: 10px;
     align-content: center;
-    display: flex;
     justify-content: space-around;
-    background-image:image(img/workicon.jpg)    
 }
 h2{
     color: white;
@@ -55,4 +54,53 @@ h2{
 body{
     background-color: #2ecc71;
     margin:0;
+}
+
+#navigation{
+    grid-area: nav;
+    background-image: url('../img/navbackground.jpg');    
+    justify-content: space-between;
+    display: flex;
+    align-content: center;
+    margin: 7px;
+    border-radius: 6px;
+    font-family: 'Nunito';
+    padding-left: 2rem;
+}
+#navigation:hover{
+    color: purple;
+}
+
+#one,
+#two,
+#three,
+#four {
+    width: 44vw;
+    height: 40vh;
+    display: flex;
+    margin: 2px;
+    padding: 2rem;
+    font-family: 'Nunito';
+
+}
+
+#one{
+    grid-area: sc1;
+    background-image: url('../img/twitch.jpg');
+    color: white;
+    align-items: center;
+}
+#two{
+    grid-area: sc2;
+    background-image: url('../img/engine.jpg');
+    object-fit: contain;
+}
+#three{
+    grid-area: sc3;
+    background-color: blue;
+
+}
+#four{
+    grid-area: sc4;
+    background-color: yellow;
 }
