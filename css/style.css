@@ -67,9 +67,7 @@ body{
     font-family: 'Nunito';
     padding-left: 2rem;
 }
-#navigation:hover{
-    color: purple;
-}
+
 
 #one,
 #two,
@@ -77,7 +75,7 @@ body{
 #four {
     width: 44vw;
     height: 40vh;
-    display: flex;
+    dis lay: flex;
     margin: 2px;
     padding: 2rem;
     font-family: 'Nunito';    
@@ -106,15 +104,67 @@ body{
 }
 footer{
     grid-area: ft;
-    display: flex;
     display: grid;
-    background-color: rgb(0, 250, 83);
+    background-color:darkgray;
     padding: 1rem;
 }
 
 .booss{
     border-radius: 900px;
     margin: 2rem;
+    width: 200px;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-content:center;
+    grid-area: pictures;
     
+
+}
+#persons {
+    display: block;
+    grid-template-areas: 
+    "pictures pictures pictures"
+    "text1 text 2 text 3"
+    ;
+
+}
+.description{
+    display:flex;
+    width: 93vw;
+    height: 20vh;
+    margin: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+#wrap {
+    display: inlineblock;
+    grid-template-areas: 
+    "Title"
+    "Image"
+    "Text"
+    "foot"
+    ;
+}
+
+.vaundy{
+    display: flex;
+    grid-area: Title;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.expo{
+    grid-area: Image;
+    width:100%;
+}
+.textomforetaget{
+    display: grid;
+    grid-area: text;
+    margin: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 16px;
 
 }
