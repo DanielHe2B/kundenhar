@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito&display=swap');
 
 #wrapper {
     display: grid;
@@ -59,13 +58,12 @@ body{
 #navigation{
     grid-area: nav;
     background-image: url('../img/navbackground.jpg');    
-    justify-content: space-between;
     display: flex;
-    align-content: center;
     margin: 7px;
     border-radius: 6px;
     font-family: 'Nunito';
     padding-left: 2rem;
+    justify-content: center;
 }
 
 
@@ -85,12 +83,14 @@ body{
 #one{
     grid-area: sc1;
     background-image: url('../img/twitch.jpg');
-    color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 #two{
     grid-area: sc2;
     background-image: url('../img/tf2.jpg');
     color: white;
+    border-radius: 5px;
 }
 #three{
     grid-area: sc3;
@@ -101,15 +101,20 @@ body{
     grid-area: sc4;
     background-image: url('../img/bottl.jpg');
     color: white;
+    
 }
 footer{
     grid-area: ft;
     display: grid;
-    background-color:darkgray;
+    background-color:rgb(3, 171, 67);
     padding: 1rem;
 }
 
-.booss{
+a{
+    color: black;
+
+}
+.personericons{
     border-radius: 900px;
     margin: 2rem;
     width: 200px;
@@ -123,13 +128,10 @@ footer{
 
 }
 #persons {
-    display: block;
-    grid-template-areas: 
-    "pictures pictures pictures"
-    "text1 text 2 text 3"
-    ;
-
+    display: flex;
+    justify-content: center;
 }
+
 .description{
     display:flex;
     width: 93vw;
@@ -149,17 +151,18 @@ footer{
     ;
 }
 
-.vaundy{
+.titleaboutus{
     display: flex;
     grid-area: Title;
     justify-content: center;
     font-family: sans-serif;
 }
 
-.expo{
+.pictureaboutus{
     grid-area: Image;
     width:100%;
 }
+
 .textomforetaget{
     display: grid;
     grid-area: text;
@@ -168,3 +171,29 @@ footer{
     padding: 2px 16px;
 
 }
+
+.card1 {
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s;
+    margin: 4rem;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+}
+
+.card1title{
+    font-size: xx-large;
+}
+
+.card1text{
+    max-height: 32em;
